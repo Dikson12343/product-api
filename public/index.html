@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Product Catalog</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { color: #333; }
+    button { padding: 10px 16px; font-size: 16px; cursor: pointer; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 16px; }
+    .card { border: 1px solid #ddd; border-radius: 8px; padding: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+    .name { font-weight: bold; }
+    .meta { font-size: 14px; color: #555; margin-top: 6px; }
+    .instock-true { color: green; font-weight: bold; }
+    .instock-false { color: crimson; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Product Catalog</h1>
+  <p>A simple frontend to fetch products from the API.</p>
+  <div>
+    <button id="loadAll">Load All Products</button>
+    <button id="loadInStock">Load In-Stock</button>
+    <button id="loadCategories">Show Categories</button>
+  </div>
+
+  <div id="output" style="margin-top:18px;"></div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
